@@ -1,0 +1,14 @@
+.logo_cabecera{
+    width: 7vw;
+    height: 7vw;
+}
+#img_conv{
+    transition: transform 0.5s ease-in-out;
+}
+#i_eh{
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    left: 5%;
+    top: 15%;
+}

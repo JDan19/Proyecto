@@ -1,0 +1,362 @@
+.texto-cabecera{
+    position: relative;
+    font-family: 'Segoe UI';
+    background-image: linear-gradient(45deg, #3D0044, #7300BB );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+#siglas{
+    font-size: 7vw;
+}
+#titulo{
+    font-size: 3.5vw;
+}
+.t_leyenda{
+    position: absolute;
+    font-size: 150%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: #3D0044;
+}
+.p_intro{
+    position: relative;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.texto_intro_oculto {
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Segoe UI';
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-300%);
+    transition: transform 0.5s ease;
+}
+#intro_titulo{
+    position: relative;
+    padding: 5%;
+    font-size: 3vh;
+}
+#intro_parrafo{
+    position: relative;
+    padding: 5%;
+    font-size: 1.8vh;
+}
+.p_titulo_herramienta_oculto{
+    position: absolute;
+    padding: 5%;
+    font-size: 2.5vh;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(-500%);
+    transition: transform 0.5s ease;
+}
+.p_titulo_herramienta{
+    position: absolute;
+    padding: 5%;
+    font-size: 2.5vh;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.p_mapas_tematicos{
+    position: absolute;
+    left: 5%;
+    font-size: 90%;
+    text-align: left;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+#biodiversidad{
+    top: 0%
+}
+#cambio_climatico{
+    top: 30%
+}
+.p_capa_tematica{
+    position: absolute;
+    margin: 0;
+    font-size: 75%;
+    font-family: 'Segoe UI';
+    color: white;
+}
+#p_bio_ap{
+    top: 10%;
+    left: 15%; 
+}
+#p_bio_ec{
+    top: 18%;
+    left: 15%; 
+}
+#p_bio_re{
+    top: 26%;
+    left: 15%; 
+}
+#p_bio_h{
+    top: 40%;
+    left: 15%; 
+}
+#p_bio_hi{
+    top: 48%;
+    left: 15%; 
+}
+#p_bio_pt{
+    top: 56%;
+    left: 15%; 
+}
+.titulo_gs{
+    position: absolute;
+    font-size: 90%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: white;
+}
+#wms{
+    left: 60%;
+}
+#wfs{
+    left: 80%; 
+}
+.subtitulo_gs{
+    position: absolute;
+    margin: 0;
+    font-size: 90%;
+    font-family: 'Segoe UI';
+    color: white;   
+}
+.p_gs{
+    position: absolute;
+    margin: 0;
+    font-size: 75%;
+    font-family: 'Segoe UI';
+    color: white;
+}
+#cat{
+    top: 5%;
+    left: 2%; 
+}
+#zr{
+    top: 12%;
+    left: 10%; 
+}
+#zu{
+    top: 18%;
+    left: 10%; 
+}
+#ter{
+    top: 24%;
+    left: 10%; 
+}
+#con{
+    top: 30%;
+    left: 10%; 
+}
+#bio{
+    top: 37%;
+    left: 2%; 
+}
+#re{
+    top: 44%;
+    left: 10%; 
+}
+#ap{
+    top: 50%;
+    left: 10%; 
+}
+#ec{
+    top: 56%;
+    left: 10%; 
+}
+#cc{
+    top: 63%;
+    left: 2%;
+}
+#eh{
+    top: 70%;
+    left: 10%; 
+}
+#pt{
+    top: 76%;
+    left: 10%; 
+}
+#h{
+    top: 83%;
+    left: 10%; 
+}
+#s{
+    top: 90%;
+    left: 2%; 
+}
+.t_gs{
+    display: none;
+}
+.nombre_consulta{
+    position: absolute;
+    margin: 0;
+    font-size: 75%;
+    font-family: 'Segoe UI';
+    color: white;
+}
+#nombre1{
+    top: 25%;
+    left: 10%; 
+}
+#nombre2{
+    top: 30%;
+    left: 10%; 
+}
+#nombre3{
+    top: 35%;
+    left: 10%; 
+}
+#salida1{
+    top: 25%;
+    left: 35%; 
+}
+#salida2{
+    top: 30%;
+    left: 35%; 
+}
+#salida3{
+    top: 35%;
+    left: 35%; 
+}
+.t_conv{
+    position: absolute;
+    font-size: 150%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: #3D0044;
+}
+.td_conv{
+    position: absolute;
+    font-size: 100%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: #3D0044;
+}
+#t_terreno{
+    top: 15%;
+    left: 25%;
+}
+#t_manzana{
+    top: 22%;
+    left: 25%;
+}
+#t_constru{
+    top: 29%;
+    left: 25%;
+}
+#t_vereda{
+    top: 36%;
+    left: 5%;
+}
+#t_vereda1{
+    top: 44%;
+    left: 25%;
+}
+#t_vereda2{
+    top: 51%;
+    left: 25%;
+}
+#t_vereda3{
+    top: 58%;
+    left: 25%;
+}
+#t_vereda4{
+    top: 65%;
+    left: 25%;
+}
+#t_vereda5{
+    top: 72%;
+    left: 25%;
+}
+#t_vereda6{
+    top: 79%;
+    left: 25%;
+}
+#t_vereda7{
+    top: 86%;
+    left: 25%;
+}
+#t_ap{
+    top: 15%;
+    left: 25%;
+}
+#t_ec1{
+    top: 15%;
+    left: 25%;
+}
+#t_ec2{
+    top: 25%;
+    left: 25%;
+}
+#t_ec3{
+    top: 35%;
+    left: 25%;
+}
+#t_ec4{
+    top: 45%;
+    left: 25%;
+}
+#t_ec5{
+    top: 55%;
+    left: 25%;
+}
+#t_ec6{
+    top: 65%;
+    left: 25%;
+}
+#t_re1{
+    top: 15%;
+    left: 25%;
+}
+#t_re2{
+    top: 25%;
+    left: 25%;
+}
+#t_eh{
+    top: 15%;
+    left: 25%;
+}
+#t_hu1{
+    top: 15%;
+    left: 25%;
+}
+#t_hu2{
+    top: 25%;
+    left: 25%;
+}
+#t_hu3{
+    top: 35%;
+    left: 25%;
+}
+#t_pt1{
+    top: 15%;
+    left: 25%;
+}
+#t_pt2{
+    top: 25%;
+    left: 25%;
+}
+#t_pt3{
+    top: 35%;
+    left: 25%;
+}

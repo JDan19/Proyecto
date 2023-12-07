@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+    body{
+        margin: 5;
+        height: fit-content;
+    padding: 5;
+    width: inherit;
+    min-width: 125px;
+    background-image: url('https://th.bing.com/th/id/OIP.2KIITq7Pi_VIoDk0HNAhZgHaFj?pid=ImgDet&rs=1');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
+}

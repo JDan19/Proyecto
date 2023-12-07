@@ -1,0 +1,290 @@
+@media only screen and (max-width: 768px) {
+    .cont_central {
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: white;
+    }
+    .cont_herramientas {
+        position: relative;
+        width: 30%;
+        height:30%;
+        background-color: white;
+    
+    }
+
+    .cont_fondo {
+        position: relative;
+        width: 150vh;
+        height: 100vw;
+    }
+
+    .cont_cabecera {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: -100px;
+        padding: -15%;
+    }
+
+    .cont_titulo1,
+    .cont_titulo2 {
+        position: relative;
+        left: 5;
+        width: 1px;
+        height: 1px;
+        margin-bottom: 5px;
+    }
+
+    .cont_logos {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width: inherit;
+        height: auto;
+    }
+
+    .cont_cuerpo {
+        display: flex;
+        flex-direction: column-reverse;
+        width: inherit;
+        height: inherit;
+        padding: 5px;
+        gap: 10px;
+    }
+    .cont_siglas{
+        position: absolute;
+        width: 3vw;
+        height: 3vw
+    }
+
+    .cont_map {
+        position: relative;
+        width: 1vw;
+        height: 1vw;
+        min-height: 380px;
+        min-width: 380px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 1px #7300BB7A;
+    }
+
+    .cont_ley_oculto,
+    .cont_ley,
+    .cont_mt_oculto,
+    .cont_mt,
+    .cont_gs_oculto,
+    .cont_gs,
+    .cont_md_oculto,
+    .cont_md,
+    .cont_con_oculto,
+    .cont_con,
+    .cont_conv_oculto,
+    .cont_conv {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        overflow: hidden;
+        border-radius: 9px;
+        box-shadow: 0px 0px 2px 1px #7300BB7A;
+        z-index: 20000;
+        text-align: center;
+    }
+    .cont_conv::-webkit-scrollbar-thumb {
+        background-color: #3D0044; /* Color del "pulgar" de la barra */
+        border-radius: 9px; /* Bordes redondeados del "pulgar" */
+    }
+    .cont_conv::-webkit-scrollbar {
+        width: 10px; /* Ancho de la barra de desplazamiento */
+        background-color: white; /* Color del "pulgar" de la barra */
+        border-radius: 9px; /* Bordes redondeados del "pulgar" */
+    }
+    .icon_conv{
+        position: absolute;
+        width: 1.5vw;
+        height: 1vw;
+        border-radius: 0.3vw;
+        border: solid 1px;
+    }
+    .icon_conv_c{
+        position: absolute;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        border: solid 1px;
+    }
+    #conv_terrenos{
+        background-color: transparent;
+        border-color: black;
+        left: 5%;
+        top: 15%;
+    }
+    #conv_manzanas{
+        background-color: #A8DFD8;
+        border-color: #005C50;
+        left: 5%;
+        top: 22%;
+    }
+    #conv_constru{
+        background-color: #F9FF89;
+        border-color: #5D5D00;
+        left: 5%;
+        top: 29%;
+    }
+    #vereda1{
+        background-color: #094A00;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 44%;
+    }
+    #vereda2{
+        background-color: #1E5E11;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 51%;
+    }
+    #vereda3{
+        background-color: #337E22;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 58%;
+    }
+    #vereda4{
+        background-color: #489F34;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 65%;
+    }
+    #vereda5{
+        background-color: #5EBF45;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 72%;
+    }
+    #vereda6{
+        background-color: #74DF57;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 79%;
+    }
+    #vereda7{
+        background-color: #8AFC68;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 86%;
+    }
+    #i_ap{
+        background-color: green;
+        opacity: 0.3;
+        border-color: rgb(0, 66, 0);
+        left: 5%;
+        top: 15%;
+    }
+    #i_ec1{
+        background-color: #2FFAC7;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 15%;
+    }
+    #i_ec2{
+        background-color: #2FF781;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 25%;
+    }
+    #i_ec3{
+        background-color: #2FF73C;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 35%;
+    }
+    #i_ec4{
+        background-color: #72F72F;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 45%;
+    }
+    #i_ec5{
+        background-color: #C6F72F;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 55%;
+    }
+    #i_ec6{
+        background-color: #F7F22F;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 65%;
+    }
+    #i_re1{
+        background-color: #000778;
+        opacity: 1;
+        border-color: transparent;
+        left: 5%;
+        top: 15%;
+    }
+    #i_re2{
+        background-color: #084600;
+        opacity: 1;
+        border-color: transparent;
+        left: 5%;
+        top: 25%;
+    }
+    #i_hu1{
+        background-color: #FF9100;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 15%;
+    }
+    #i_hu2{
+        background-color: #FFF600;
+        
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 25%;
+    }
+    #i_hu3{
+        background-color: #00C69C;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 35%;
+    }
+    #i_pt1{
+        background-color: #FFAD00;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 15%;
+    }
+    #i_pt2{
+        background-color: #B8FF2B;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 25%;
+    }
+    #i_pt3{
+        background-color: #00B8B0;
+        opacity: 0.5;
+        border-color: transparent;
+        left: 5%;
+        top: 35%;
+    }
+}

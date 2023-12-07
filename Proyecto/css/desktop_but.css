@@ -1,0 +1,250 @@
+.btn_funcion{
+    position: absolute;
+    width: 5vw;
+    min-width: 68px;
+    height: 5vw;
+    min-height: 68px;
+    border-radius: 9px;
+    border: solid 1px #FFFFFF00;
+    overflow: hidden;
+    background-color: #FFFFFF00;
+    transition: 0.3s
+}
+.btn_funcion:hover{
+    background-color: #7300BB7A;
+}
+.btn_funcion img{
+    width: 80%;
+    height: 80%;
+}
+.btn_funcion img:hover{
+    width: 80%;
+    height: 80%;
+}
+#btn_1{
+    top: 0;
+    left: 0;
+}
+#btn_2{
+    top: 0;
+    left: 25%;
+}
+#btn_3{
+    top: 0;
+    left: 50%;
+}
+#btn_4{
+    top: 0;
+    left: 75%;
+}
+.ver_mt{
+    right: 7%;
+    height: 2vw;
+    max-height: 20px;
+    width: 8vw;
+    max-width: 80px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFFFF00;;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.ver_mt:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+#ver_ap{
+    top: 10%;
+}
+#ver_ec{
+    top: 18%;
+}
+#ver_re{
+    top: 26%;
+}
+#ver_h{
+    top: 40%;
+}
+#ver_hi{
+    top: 48%;
+}
+#ver_pt{
+    top: 56%;
+}
+.cop_gs{
+    height: 2vw;
+    width: 5vw;
+    max-height: 20px;
+    max-width: 40px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    font-size: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #FFFFFF00;;
+}
+.cop_gs:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+.cop_md{
+    height: 2vw;
+    width: 5vw;
+    max-height: 20px;
+    max-width: 40px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    font-size: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #FFFFFF00;;
+}
+.cop_md:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+#wms_zr{
+    top: 12%;
+    left: 59%;
+}
+#wfs_zr{
+    top: 12%;
+    left: 79%;
+}
+#wms_zu{
+    top: 18%;
+    left: 59%;
+}
+#wfs_zu{
+    top: 18%;
+    left: 79%;
+}
+#wms_ter{
+    top: 24%;
+    left: 59%;
+}
+#wfs_ter{
+    top: 24%;
+    left: 79%;
+}
+#wms_con{
+    top: 30%;
+    left: 59%;
+}
+#wfs_con{
+    top: 30%;
+    left: 79%;
+}
+#wms_re{
+    top: 44%;
+    left: 59%;
+}
+#wfs_re{
+    top: 44%;
+    left: 79%;
+}
+#wms_ap{
+    top: 50%;
+    left: 59%;
+}
+#wfs_ap{
+    top: 50%;
+    left: 79%;
+}
+#wms_ec{
+    top: 56%;
+    left: 59%;
+}
+#wfs_ec{
+    top: 56%;
+    left: 79%;
+}
+#wms_eh{
+    top: 70%;
+    left: 59%;
+}
+#wfs_eh{
+    top: 70%;
+    left: 79%;
+}
+#wms_pt{
+    top: 76%;
+    left: 59%;
+}
+#wfs_pt{
+    top: 76%;
+    left: 79%;
+}
+#wms_h{
+    top: 83%;
+    left: 59%;
+}
+#wfs_h{
+    top: 83%;
+    left: 79%;
+}
+.consulta{
+    top: 12.5%;
+    height: 2vw;
+    width: 80%;
+    max-height: 20px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    font-size: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #FFFFFF00;;
+}
+.consulta:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+.ver_conv{
+    position: absolute;
+    width: 2vw;
+    min-width: 20px;
+    height: 2vw;
+    min-height: 20px;
+    left: 0.5vw;
+    bottom: 20vw;
+    background-color: white;
+    border-radius: 6px;
+    border: 0px;
+    box-shadow: 0px 0px 2px 1px #7300BB7A;
+    z-index: 20000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+.ver_conv:hover{
+    background-color: #7300BB7A;
+}
+.ver_conv img{
+    width: 100%;
+    height: 80%;
+}
