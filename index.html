@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOCU</title>
+
+    <link rel="stylesheet" href="css/desktop_body.css">
+    <link rel="stylesheet" href="css/desktop_but.css">
+    <link rel="stylesheet" href="css/desktop_div.css">
+    <link rel="stylesheet" href="css/desktop_img.css">
+    <link rel="stylesheet" href="css/desktop_text.css">
+    <link rel="stylesheet" href="css/mobile_body.css">
+    <link rel="stylesheet" href="css/mobile_but.css">
+    <link rel="stylesheet" href="css/mobile_div.css">
+    <link rel="stylesheet" href="css/mobile_img.css">
+    <link rel="stylesheet" href="css/mobile_text.css">
+    
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script type = "text/javascript" src="js/slide_tool.js"></script>
+    <script type = "text/javascript" src="js/biodiversidad/areas_protegidas.js"></script>
+    <script type = "text/javascript" src="js/biodiversidad/ecosistema.js"></script>
+    <script type = "text/javascript" src="js/biodiversidad/registro_especies.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/est_red_h.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/est_red_h.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/humedad.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/piso_termico.js"></script>
+    <script type = "text/javascript" src="js/catastro/construccion.js"></script>
+    <script type = "text/javascript" src="js/catastro/manzana.js"></script>
+    <script type = "text/javascript" src="js/catastro/terreno.js"></script>
+    <script type = "text/javascript" src="js/catastro/vereda.js"></script>
+    <script type = "text/javascript" src="js/muestra_gs.js"></script>
+    <script type = "text/javascript" src="js/muestra_md.js"></script>
+</head>
+<body>
+    <div class="cont_fondo">
+        <div class="cont_central">
+            <div class="cont_cabecera">
+                <div class="texto-cabecera">
+                    <h1 id="siglas">GEOCU</h1>
+                    <h1 class="cabecera2" id="titulo">Geoportal Catastral | La Unión, Valle</h1>
+                </div>
+                <div class="cont_logos">
+                    <img src="media/logo_union.jpeg" class="logo_cabecera" id="1" alt="Escudo de La Unión, Valle">
+                    <img src="media/logo_union2.jpeg" class = "logo_cabecera" id="2" alt="Logo del Programa: Me la juego por La Unión">
+                </div>
+            </div>
+            <div class="cont_cuerpo">
+                <div class="cont_map" id = "map">
+                    <script type="text/javascript" src="js/map.js"></script>
+                    <script type = "text/javascript" src="js/mapas_tematicos.js"></script>
+                    <script type = "text/javascript" src="js/catastro.js"></script>
+                    <button class = "ver_conv" onclick="muestra_conv()">
+                        <img src="media/f_conv.png" id="img_conv">
+                    </button>
+                    <div class = "cont_conv_oculto" id = "conv">
+                        <p class = "t_conv">Convenciones</p>
+                        <div class = "icon_conv" id="conv_terrenos"></div>
+                        <div class = "icon_conv" id="conv_manzanas"></div>
+                        <div class = "icon_conv" id="conv_constru"></div>
+                        <div class = "icon_conv" id="vereda1"></div>
+                        <div class = "icon_conv" id="vereda2"></div>
+                        <div class = "icon_conv" id="vereda3"></div>
+                        <div class = "icon_conv" id="vereda4"></div>
+                        <div class = "icon_conv" id="vereda5"></div>
+                        <div class = "icon_conv" id="vereda6"></div>
+                        <div class = "icon_conv" id="vereda7"></div>
+        
+                        <p class = "td_conv" id = "t_terreno">Terrenos</p>
+                        <p class = "td_conv" id = "t_manzana">Manzanas</p>
+                        <p class = "td_conv" id = "t_constru">Construcciones</p>
+                        <p class = "td_conv" id = "t_vereda">Veredas</p>
+                        <p class = "td_conv" id = "t_vereda1">Cabecera MPAL.</p>
+                        <p class = "td_conv" id = "t_vereda2">El lindero</p>
+                        <p class = "td_conv" id = "t_vereda3">Quebrada grande</p>
+                        <p class = "td_conv" id = "t_vereda4">La despensa</p>
+                        <p class = "td_conv" id = "t_vereda5">Corcega</p>
+                        <p class = "td_conv" id = "t_vereda6">La aguada</p>
+                        <p class = "td_conv" id = "t_vereda7">San Luis</p>
+        
+                    </div>
+                    <div class = "cont_ley_oculto" id="leyenda_ap">
+                        <p class = "t_leyenda">Leyenda</p>
+                        <div class = "icon_conv" id="i_ap"></div>
+                        <p class = "td_conv" id = "t_ap">Áreas protegidas</p>
+                    </div>
+                    <div class = "cont_ley_oculto" id="leyenda_ec">
+                        <p class = "t_leyenda">Leyenda</p>
+                        <div class = "icon_conv" id="i_ec1"></div>
+                        <div class = "icon_conv" id="i_ec2"></div>
+                        <div class = "icon_conv" id="i_ec3"></div>
+                        <div class = "icon_conv" id="i_ec4"></div>
+                        <div class = "icon_conv" id="i_ec5"></div>
+                        <div class = "icon_conv" id="i_ec6"></div>
+        
+                        <p class = "td_conv" id = "t_ec1">Bosque frio humedo en montana fluvio-gravitacional</p>
+                        <p class = "td_conv" id = "t_ec2">Arbustales y matorrales medio muy seco en montana fluvio-gravitacional</p>
+                        <p class = "td_conv" id = "t_ec3">Bosque calido seco en lomerio fluvio-lacustre</p>
+                        <p class = "td_conv" id = "t_ec4">Bosque medio humedo en montana fluvio-gravitacional</p>
+                        <p class = "td_conv" id = "t_ec5">Bosque calido seco en planicie aluvial</p>
+                        <p class = "td_conv" id = "t_ec6">Bosque calido seco en piedemonte aluvial</p>
+                    </div>
+                    <div class = "cont_ley_oculto" id="leyenda_re">
+                        <p class = "t_leyenda">Leyenda</p>
+                        <div class = "icon_conv_c" id="i_re1"></div>
+                        <div class = "icon_conv_c" id="i_re2"></div>
+        
+                        <p class = "td_conv" id = "t_re1">Animales</p>
+                        <p class = "td_conv" id = "t_re2">Plantas</p>
+                    </div>
+                    <div class = "cont_ley_oculto" id="leyenda_eh">
+                        <p class = "t_leyenda">Leyenda</p>
+                        <img src="media/est_h.png" id = "i_eh">
+                        <p class = "td_conv" id = "t_eh">Estaciones Hidroclimatológicas</p>
+                    </div>
+                    <div class = "cont_ley_oculto" id="leyenda_hu">
+                        <p class = "t_leyenda">Leyenda</p>
+                        <div class = "icon_conv" id="i_hu1"></div>
+                        <div class = "icon_conv" id="i_hu2"></div>
+                        <div class = "icon_conv" id="i_hu3"></div>
+        
+                        <p class = "td_conv" id = "t_hu1">Muy seco</p>
+                        <p class = "td_conv" id = "t_hu2">Seco</p>
+                        <p class = "td_conv" id = "t_hu3">Húmedo</p>
+                    </div>
+                    <div class = "cont_ley_oculto" id="leyenda_pt">
+                        <p class = "t_leyenda">Leyenda</p>
+                        <div class = "icon_conv" id="i_pt1"></div>
+                        <div class = "icon_conv" id="i_pt2"></div>
+                        <div class = "icon_conv" id="i_pt3"></div>
+        
+                        <p class = "td_conv" id = "t_pt1">Cálido</p>
+                        <p class = "td_conv" id = "t_pt2">Medio</p>
+                        <p class = "td_conv" id = "t_pt3">Frio</p>
+                    </div>
+                </div>
+
+                <div class="cont_herramientas" id="id_cont_herramientas">
+                    <div class="cont_menu">
+                        <button  onclick="muestra_consulta_catastral()" class = "btn_funcion" id = "btn_1">
+                            <img src="media/icon_geov.png" title="Inicio">
+                        </button>
+                        <button onclick="muestra_mapas_tematicos()" class = "btn_funcion" id = "btn_2">
+                            <img src="media/icon_mapas.png" title="Mapas Temáticos">
+                        </button>
+                        <button onclick="muestra_geoservicios()" class = "btn_funcion" id = "btn_3">
+                            <img src="media/icon_geos.png" title="Geoservicios">
+                        </button>
+                        <button onclick="muestra_metadatos()" class = "btn_funcion" id = "btn_4">
+                            <img src="media/icon_meta.png" title="Metadatos">
+                        </button>
+                    </div>
+                    <div class = "cont_salidas" id="salidas_intro">
+                        <p class = "p_intro" id = "intro_titulo">¡Bienvenido!</p>
+                        <p class = "p_intro" id = "intro_parrafo">Arriba de este recuadro encuentras cuatro iconos que te brindan las funciones de consulta catastral, mapas temáticos, geoservicios y metadatos, respectivamente ¡Anímate a hacer clic en alguna!</p>
+                        <p class = "p_titulo_herramienta_oculto" id = "consulta_catastral">Consulta catastral</p>
+                        <p class = "p_titulo_herramienta_oculto" id = "mapas_tematicos">Mapas temáticos</p>
+                        <p class = "p_titulo_herramienta_oculto" id = "geoservicios">Geoservicios</p>
+                        <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
+                        <div class = "cont_con_oculto" id = "cont_con">
+                            <input type="text" id="in_npn" name="miEntrada" placeholder="Ingresa acá el npn de tu predio" value="764000001000000010142000000000">
+                            <button class = "consulta" onclick="buscarPredio()" id = "catastral">Consultar información catastral</button>
+                            <div style="margin: 40% 3% 10% 3%; width: 100%; height: 80%; overflow: auto; background-color: #c8aee883; padding: 10px; border-radius: 10px; font-size: 0.8vw;">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="2" scope="row" style="color:rgb(255, 255, 255)">NPN</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" id="table_consulta_npn" style="color:rgb(254, 240, 255)"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" style="color:aliceblue" >DIRECCIÓN</th>
+                                            <td id="table_consulta_direccion" style="color:aliceblue"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row" style="color:aliceblue" >DESTINACIÓN </th>
+                                            <td id="table_consulta_destinacion_economica" style="color:aliceblue"></td>
+                                        </tr>
+            
+                                        <tr>
+                                            <th scope="row" style="color:aliceblue" >AREA</th>
+                                            <td id="table_consulta_area" style="color:aliceblue"></td>
+                                        </tr>
+            
+                                        <tr>
+                                            <th colspan="2" scope="row" style="color:aliceblue">CONSTRUCCIÓN</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" style="color:aliceblue" >IDENTIFICADOR</th>
+                                            <td id="table_consulta_identificador" style="color:aliceblue"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" style="color:aliceblue" >N° PISOS</th>
+                                            <td id="table_consulta_numero_pisos" style="color:aliceblue"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" style="color:aliceblue" >ÁREA CONTRUIDA</th>
+                                            <td id="table_consulta_area_construida" style="color:aliceblue"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class = "cont_mt_oculto" id = "cont_mt">
+                            <p class = "p_mapas_tematicos" id = "biodiversidad">Biodiversidad</p>
+                            <p class = "p_capa_tematica" id = "p_bio_ap">Áreas protegidas</p>
+                            <p class = "p_capa_tematica" id = "p_bio_ec">Ecosistemas</p>
+                            <p class = "p_capa_tematica" id = "p_bio_re">Regístro de especies</p>
+                            <p class = "p_capa_tematica" id = "p_bio_h">Hidroclimatología</p>
+                            <p class = "p_capa_tematica" id = "p_bio_hi">Humedad</p>
+                            <p class = "p_capa_tematica" id = "p_bio_pt">Piso térmico</p>
+                            <p class = "p_mapas_tematicos" id = "cambio_climatico">Cambio climático</p>
+        
+                            <button class = "ver_mt" id = "ver_ap" onclick="ver_ap()">Ver/Ocultar</button>
+                            <button class = "ver_mt" id = "ver_ec" onclick="ver_ec()">Ver/Ocultar</button>
+                            <button class = "ver_mt" id = "ver_re" onclick="ver_re()">Ver/Ocultar</button>
+                            <button class = "ver_mt" id = "ver_h"  onclick="ver_eh()">Ver/Ocultar</button>
+                            <button class = "ver_mt" id = "ver_hi" onclick="ver_hu()">Ver/Ocultar</button>
+                            <button class = "ver_mt" id = "ver_pt" onclick="ver_pt()">Ver/Ocultar</button>
+                        </div>
+                        <div class = "cont_gs_oculto" id = "cont_gs">
+                            <p class = "titulo_gs" id="wms">WMS</p>
+                            <p class = "titulo_gs" id="wfs">WFS</p>
+                            <p class = "subtitulo_gs" id = "cat">Catastro</p>
+                            <p class = "p_gs" id = "zr">Veredas</p>
+                            <p class = "p_gs" id = "zu">Manzanas</p>
+                            <p class = "p_gs" id = "ter">Terrenos</p>
+                            <p class = "p_gs" id = "con">Construcciones</p>
+                            <p class = "subtitulo_gs" id = "bio">Biodiversidad</p>
+                            <p class = "p_gs" id = "re">Registro de especies</p>
+                            <p class = "p_gs" id = "ap">Areas protegidas</p>
+                            <p class = "p_gs" id = "ec">Ecosistema</p>
+                            <p class = "subtitulo_gs" id = "cc">Cambio climático</p>
+                            <p class = "p_gs" id = "eh">Hidroclimatología</p>
+                            <p class = "p_gs" id = "pt">Piso térmico</p>
+                            <p class = "p_gs" id = "h">Humedad</p>
+        
+                            <button class = "cop_gs" id = "wms_zr" onclick="wms_zr()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_zr" onclick="wfs_zr()">Ver</button>
+                            <button class = "cop_gs" id = "wms_zu" onclick="wms_zu()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_zu" onclick="wfs_zu()">Ver</button>
+                            <button class = "cop_gs" id = "wms_ter" onclick="wms_ter()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_ter" onclick="wfs_ter()">Ver</button>
+                            <button class = "cop_gs" id = "wms_con" onclick="wms_con()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_con" onclick="wfs_con()">Ver</button>
+                            <button class = "cop_gs" id = "wms_re" onclick="wms_re()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_re" onclick="wfs_re()">Ver</button>
+                            <button class = "cop_gs" id = "wms_ap" onclick="wms_ap()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_ap" onclick="wfs_ap()">Ver</button>
+                            <button class = "cop_gs" id = "wms_ec" onclick="wms_ec()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_ec" onclick="wfs_ec()">Ver</button>
+                            <button class = "cop_gs" id = "wms_eh" onclick="wms_eh()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_eh" onclick="wfs_eh()">Ver</button>
+                            <button class = "cop_gs" id = "wms_pt" onclick="wms_pt()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_pt" onclick="wfs_pt()">Ver</button>
+                            <button class = "cop_gs" id = "wms_h" onclick="wms_h()">Ver</button>
+                            <button class = "cop_gs" id = "wfs_h" onclick="wfs_h()">Ver</button>
+                        </div>
+                        <div class = "cont_md_oculto" id = "cont_md">
+                            <p class = "subtitulo_gs" id = "cat">Catastro</p>
+                            <p class = "p_gs" id = "zr">Veredas</p>
+                            <p class = "p_gs" id = "zu">Manzanas</p>
+                            <p class = "p_gs" id = "ter">Terrenos</p>
+                            <p class = "p_gs" id = "con">Construcciones</p>
+                            <p class = "subtitulo_gs" id = "bio">Biodiversidad</p>
+                            <p class = "p_gs" id = "re">Registro de especies</p>
+                            <p class = "p_gs" id = "ap">Areas protegidas</p>
+                            <p class = "p_gs" id = "ec">Ecosistema</p>
+                            <p class = "subtitulo_gs" id = "cc">Cambio climático</p>
+                            <p class = "p_gs" id = "eh">Hidroclimatología</p>
+                            <p class = "p_gs" id = "pt">Piso térmico</p>
+                            <p class = "p_gs" id = "h">Humedad</p>
+        
+                            <button class = "cop_md" id = "wms_zr" onclick="md_zr()">Ver</button>
+                            <button class = "cop_md" id = "wms_zu" onclick="md_zu()">Ver</button>
+                            <button class = "cop_md" id = "wms_ter" onclick="md_ter()">Ver</button>
+                            <button class = "cop_md" id = "wms_con" onclick="md_con()">Ver</button>
+                            <button class = "cop_md" id = "wms_re" onclick="md_re()">Ver</button>
+                            <button class = "cop_md" id = "wms_ap" onclick="md_ap()">Ver</button>
+                            <button class = "cop_md" id = "wms_ec" onclick="md_ec()">Ver</button>
+                            <button class = "cop_md" id = "wms_eh" onclick="md_eh()">Ver</button>
+                            <button class = "cop_md" id = "wms_pt" onclick="md_pt()">Ver</button>
+                            <button class = "cop_md" id = "wms_h" onclick="md_h()">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+                
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="js/consultas/findNpn.js"></script>
+</body>
+</html>
